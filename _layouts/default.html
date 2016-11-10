@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="page-content">
+        <div class="herospace">
+            <div class="herospace-content">
+              <h1 class="hero-title">Cuando Viene Bru?</h1>
+              <p class="hero-desc">Un sitio para que le dejen de preguntar a Bruno cuando viene a BA.</p>
+              <div class="clock-container">
+                <div class="your-clock"></div>
+              </div>
+            </div>
+            <div class="bru-column">
+              <img src="/assets/bru-waiting.jpg" alt="">
+            </div>
+        </div>
+        <!-- {{ content }} -->
+    </div>
+
+    <script type="text/javascript" src="{{'/scripts/jquery-3.1.1.min.js' | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{'/scripts/flipclock.min.js' | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{'/scripts/main.js' | prepend: site.baseurl }}"></script>
+  </body>
+</html>
